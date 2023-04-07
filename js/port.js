@@ -16,25 +16,6 @@ window.onscroll = () => {
             });
         };
     });
+    let header = document.querySelectorAll('header');
+    header.classList.toggle('sticky',window.scrollY > 100);
 };
-  /* scroll reveal */
-scrollReveal({
-    reset: true,
-    distance: '80px',
-    duration:2000,
-    delay: 200
-});
-ScrollReveal().reveal('.home-content, heading', { origin: 'top' });
-scrollReveal().reveal('.home-content, .heading', {origin:'top'});
-scrollReveal().reveal('.home-img, .services-container, .contact form', {origin:'bottom'});
-
-
-
-/* typed js */
-const typed = new typed ('.multiple-text', {
-    Strings: ['Fronted Developer','YouTuber', 'Blogger'],
-    typespeed: 100,
-    backspeed: 100,
-    backDelay: 1000,
-    loop: true
-});
